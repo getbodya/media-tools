@@ -3,7 +3,7 @@
     <v-app-bar elevation="2" color="white">
       <v-container class="d-flex align-center justify-center">
         <h1 class="text-h5 text-sm-h4 font-weight-bold text-primary">
-          MP3 Compression
+          Сжатие MP3
         </h1>
       </v-container>
     </v-app-bar>
@@ -12,14 +12,14 @@
       <v-container fluid class="fill-height">
         <v-row align="center" justify="center" class="fill-height">
           <v-col cols="12" md="3" lg="3" class="d-none d-md-block">
-            <v-card class="ad-container pa-4" elevation="2" height="400">
+            <!-- <v-card class="ad-container pa-4" elevation="2" height="400">
               <div class="ad-label text-caption text-grey mb-2">Реклама</div>
               <v-sheet
                 class="ad-placeholder fill-height d-flex align-center justify-center"
               >
                 <span class="text-grey">Рекламное место</span>
               </v-sheet>
-            </v-card>
+            </v-card> -->
           </v-col>
 
           <v-col cols="12" md="6" lg="6">
@@ -29,25 +29,25 @@
           </v-col>
 
           <v-col cols="12" md="3" lg="3" class="d-none d-md-block">
-            <v-card class="ad-container pa-4" elevation="2" height="400">
+            <!-- <v-card class="ad-container pa-4" elevation="2" height="400">
               <div class="ad-label text-caption text-grey mb-2">Реклама</div>
               <v-sheet
                 class="ad-placeholder fill-height d-flex align-center justify-center"
               >
                 <span class="text-grey">Рекламное место</span>
               </v-sheet>
-            </v-card>
+            </v-card> -->
           </v-col>
 
           <v-col cols="12" class="d-md-none mt-4">
-            <v-card class="ad-container-mobile pa-2" elevation="2" height="100">
+            <!-- <v-card class="ad-container-mobile pa-2" elevation="2" height="100">
               <div class="ad-label text-caption text-grey">Реклама</div>
               <v-sheet
                 class="ad-placeholder fill-height d-flex align-center justify-center"
               >
                 <span class="text-grey">Рекламное место</span>
               </v-sheet>
-            </v-card>
+            </v-card> -->
           </v-col>
         </v-row>
       </v-container>
@@ -56,7 +56,7 @@
     <v-footer class="bg-grey-lighten-3 text-center">
       <v-container>
         <div class="text-caption text-grey-darken-1">
-          © 2025 MP3 Compression. Все права защищены.
+          © 2026 MP3 Compression. Все права защищены.
         </div>
       </v-container>
     </v-footer>

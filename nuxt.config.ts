@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  target: "static",
   srcDir: "src/",
   modules: ["vuetify-nuxt-module"],
   // @ts-ignore
@@ -49,4 +50,7 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2025-03-09",
+  build: {
+    transpile: ["file-saver"],
+  },
 });

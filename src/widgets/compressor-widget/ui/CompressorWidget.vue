@@ -1,19 +1,5 @@
 <template>
   <v-card class="compressor-widget" elevation="4" rounded="xl">
-    <v-card-title class="bg-primary text-white py-4">
-      <v-row align="center" justify="space-between">
-        <v-col cols="auto">
-          <v-icon size="32" class="mr-2">mdi-music</v-icon>
-          <span class="text-h5">MP3 Компрессор</span>
-        </v-col>
-        <v-col cols="auto">
-          <v-chip color="white" text-color="primary" variant="outlined">
-            v1.0.0
-          </v-chip>
-        </v-col>
-      </v-row>
-    </v-card-title>
-
     <v-card-text class="pa-6">
       <v-row>
         <v-col cols="12">
@@ -262,7 +248,7 @@
               </v-row>
             </v-card>
 
-            <div class="d-flex gap-4 mt-4">
+            <div class="d-flex flex-column gap-4 mt-4">
               <v-btn
                 color="primary"
                 block
@@ -318,7 +304,8 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { saveAs } from "file-saver";
+import * as FileSaver from "file-saver";
+
 import type {
   IAudioFile,
   CompressionOptions,
@@ -409,7 +396,7 @@ function downloadCompressed() {
   if (!currentFile.value?.compressedFile) return;
 
   const fileName = currentFile.value.name.replace(".mp3", "_compressed.mp3");
-  saveAs(currentFile.value.compressedFile, fileName);
+  FileSaver(currentFile.value.compressedFile, fileName);
 }
 
 function reset() {
