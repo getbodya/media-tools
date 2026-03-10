@@ -53,4 +53,9 @@ export default defineNuxtConfig({
   // build: {
   //   transpile: ["file-saver"],
   // },
+  app: {
+    head: {
+      meta: [{ name: "yandex-verification", content: "94274c217da521f9" }],
+    },
+  },
 });
