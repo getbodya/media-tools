@@ -304,7 +304,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import * as FileSaver from "file-saver";
+import { saveFile } from "modern-file-saver";
 
 import type {
   IAudioFile,
@@ -392,11 +392,14 @@ async function compress() {
   }
 }
 
-function downloadCompressed() {
+async function downloadCompressed() {
   if (!currentFile.value?.compressedFile) return;
 
   const fileName = currentFile.value.name.replace(".mp3", "_compressed.mp3");
-  FileSaver(currentFile.value.compressedFile, fileName);
+  await saveFile(currentFile.value.compressedFile, {
+    fileName: fileName,
+    mimeType: "audio/mpeg",
+  });
 }
 
 function reset() {
