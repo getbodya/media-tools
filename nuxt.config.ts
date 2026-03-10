@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2025-03-09",
-  build: {
-    transpile: ["file-saver"],
-  },
+  // build: {
+  //   transpile: ["file-saver"],
+  // },
 });
