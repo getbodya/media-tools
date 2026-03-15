@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   target: "static",
   srcDir: "src/",
-  modules: ["vuetify-nuxt-module"],
+  modules: ["vuetify-nuxt-module", "@nuxtjs/sitemap"],
   // @ts-ignore
   vuetify: {
     moduleOptions: {
@@ -43,6 +43,12 @@ export default defineNuxtConfig({
     "@mdi/font/css/materialdesignicons.min.css",
     "./src/app/styles/global.css",
   ],
+  sitemap: {
+    hostname: "https://mp3slim.com",
+    path: "/sitemap.xml",
+    gzip: true,
+    exclude: ["/admin/**", "/_nuxt/**", "/server/**"],
+  },
   ssr: true,
   vite: {
     optimizeDeps: {

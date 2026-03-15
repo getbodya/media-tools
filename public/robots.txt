@@ -1,2 +1,16 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Disallow: /admin/        
+Disallow: /_nuxt/         
+Disallow: /server/      
+Disallow: /*?* 
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /_nuxt/
+Disallow: /server/
+
+
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+Clean-param: ref&from&fbclid&gclid&yclid&openstat
+
+Sitemap: https://mp3slim.com/sitemap.xml
